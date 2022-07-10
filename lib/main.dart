@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progess_bar_circular/src/pages/animations_page.dart';
+import 'package:progess_bar_circular/src/pages/circular_progress_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AnimationsPage(),
+      home: const CircularProgressPage(),
     );
   }
 }
