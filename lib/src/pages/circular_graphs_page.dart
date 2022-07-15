@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progess_bar_circular/src/widgets/radial_progress.dart';
 
 class CircularGraphsPage extends StatefulWidget {
   const CircularGraphsPage({Key? key}) : super(key: key);
@@ -24,7 +25,11 @@ class _CircularGraphsPageState extends State<CircularGraphsPage> {
         },
       ),
       body: Center(
-        child: Text('$percentage %'),
+        child: Container(
+          width: 300,
+          height: 300,
+          child: RadialProgress(percentage: percentage),
+        ),
       ),
     );
   }
