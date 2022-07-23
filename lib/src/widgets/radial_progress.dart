@@ -8,7 +8,7 @@ class RadialProgress extends StatefulWidget {
     required this.percentage,
     this.primaryColor = Colors.blue,
     this.secondaryColor = Colors.grey,
-    this.primaryThickness = 4,
+    this.primaryThickness = 6,
     this.secondaryThickness = 4,
   }) : super(key: key);
 
@@ -95,6 +95,7 @@ class _MyRadialPainter extends CustomPainter {
 
     //Arco
     final paintBow = Paint()
+      ..strokeCap = StrokeCap.round
       ..strokeWidth = primaryThickness
       ..color = primaryColor
       ..style = PaintingStyle.stroke;
